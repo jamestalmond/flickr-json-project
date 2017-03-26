@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+	<meta name="keywords" content="json, project, flickr">
+	<meta name="description" content="James Thomas Almond - JSON project">
+
+	<title>Project</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Merriweather:400,700">
+	<!--build:css css/styles.css-->
+	<link rel="stylesheet" href="css/styles.css">
+	<!--endbuild-->
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+	<header class="page-header" role="banner">
+		<div class="container">
+			<h1 class="page-title">
+				A Flickr feed
+			</h1><!-- /.page-title -->
+			<div class="subtitle">
+				by James Thomas Almond
+			</div><!-- /.subtitle -->
+			<a href="#" class="favs-only feed-btn">My favourites</a>
+			<a href="#" class="show-all feed-btn">Show all items</a>
+			<div class="clear-favs">
+				<a href="#" class="clear-favs-btn">Clear my favourites</a>
+			</div><!-- /.clear-favs -->
+		</div><!-- /.container -->
+	</header><!-- /.page-header -->
+
+
+
+
+
+	<main class="page-content" role="main">
+
+		<div class="flickr-feed container"></div><!-- /.flickr-feed container -->
+
+	</main><!-- /.page-content -->
+
+
+
+
+
+	<footer class="page-footer" role="contentinfo">
+	</footer><!-- /.page-footer -->
+
+
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!--build:js js/script.js-->
+	<script src="js/script.js"></script>
+	<!--endbuild-->
+	<script src="http://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=flickrFeed&tags=city"></script>
+
+</body>
+
+</html>

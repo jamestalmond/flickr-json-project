@@ -1,0 +1,159 @@
+/**
+ * $-Content
+ */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadein 2s;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.page-title {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  color: RoyalBlue;
+}
+
+.feed-btn {
+  display: inline-block;
+  padding: .75rem;
+  border-radius: .1875rem;
+  margin-top: 1.5rem;
+  line-height: 1;
+  background-color: crimson;
+  color: white;
+  @include link-hov;
+}
+
+.show-all {
+  display: none;
+}
+
+.clear-favs {
+  margin-top: 1.5rem;
+  a {
+    color: lighten($color, 40%);
+    @include link-hov;
+  }
+}
+
+
+/**
+ * Feed
+ */
+
+.flickr-feed {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.no-results {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+}
+
+
+/**
+ * Items
+ */
+
+.item {
+  width: 100%;
+  margin-top: 1.5rem;
+  border-radius: .1875rem;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  text-align: left;
+  word-break: break-all;
+  overflow: hidden;
+  transition: box-shadow 100ms ease-in-out;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+.author {
+  padding: .75rem;
+}
+
+.author-profile {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2rem;
+  line-height: 2rem;
+  border-radius: 100%;
+  margin-right: .75rem;
+  background-color: #eee;
+  text-align: center;
+  font-family: $heading-typeface;
+  font-size: 1.2rem;
+  color: $color;
+}
+
+.img-cont {
+	text-align: center;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: .75rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.details {
+  padding: .75rem;
+  font-size: .8rem;
+}
+
+.label {
+  font-style: italic;
+}
+
+.tags {
+  margin-top: .75rem;
+  font-size: .8rem;
+  color: #aaa;
+}
+
+.controls {
+  margin-top: .75rem;
+  border-top: 1px solid #ccc;
+  padding-top: .75rem;
+}
+
+.fav-btn {
+  float: right;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  path {
+    fill: #ccc;
+  }
+}
+
+.fav {
+  .author {
+    background-color: crimson;
+    color: white;
+  }
+  .author-profile {
+    background-color: white;
+  }
+  .fav-btn {
+    path {
+      fill: crimson;
+    }
+  }
+}

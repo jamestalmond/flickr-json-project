@@ -1,0 +1,26 @@
+// highlight
+@mixin selection {
+	background-color: #333;
+	color: #fff;
+}
+
+// opacity transition
+@mixin trans-op {
+	transition: opacity 100ms ease-in-out;
+	backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+// opacity hover
+@mixin hov-op {
+	opacity: .75;
+}
+
+// link hover
+@mixin link-hov {
+	@include trans-op;
+  &:hover {
+    text-decoration: none;
+    @include hov-op;
+  }
+}

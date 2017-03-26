@@ -1,0 +1,35 @@
+/**
+ * $-Media-queries
+ */
+
+@media only screen and (max-width:767px) {
+  .page-title {
+    margin-top: 1.5rem;
+  }
+}
+@media only screen and (min-width:568px) {
+  .item {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+}
+@media only screen and (min-width:568px) and (max-width:1023px) {
+  .item {
+    width: calc(50% - 1.5rem);
+  }
+}
+@media only screen and (min-width:1024px) and (max-width:1279px) {
+  .item {
+    width: calc(33.333333% - 1.5rem);
+  }
+}
+@media only screen and (min-width:1280px) and (max-width:1919px) {
+  .item {
+    width: calc(25% - 1.5rem);
+  }
+}
+@media only screen and (min-width:1920px) {
+  .item {
+    width: calc(20% - 1.5rem);
+  }
+}

@@ -1,0 +1,123 @@
+/**
+ * $-Modules
+ */
+
+
+/**
+ * Clear fix
+ */
+
+.cf {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+/**
+ * Inline block
+ */
+
+.ib {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.ib-m {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/**
+ * List reset
+ */
+
+.list-reset {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: none;
+	.list-truncation {
+		font-style: italic;
+	}
+}
+
+
+/**
+ * Container
+ */
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+
+/**
+ * Columns
+ */
+
+.col {
+	display: block;
+	float: left;
+	margin-left: 1.6%;
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+
+/**
+ * Fluid grid
+ */
+
+.grid-12 {
+	width: 100%;
+}
+
+.grid-11 {
+	width: 91.53%;
+}
+
+.grid-10 {
+	width: 83.06%;
+}
+
+.grid-9 {
+	width: 74.6%;
+}
+
+.grid-8 {
+	width: 66.13%;
+}
+
+.grid-7 {
+	width: 57.66%;
+}
+
+.grid-6 {
+	width: 49.2%;
+}
+
+.grid-5 {
+	width: 40.73%;
+}
+
+.grid-4 {
+	width: 32.26%;
+}
+
+.grid-3 {
+	width: 23.8%;
+}
+
+.grid-2 {
+	width: 15.33%;
+}
+
+.grid-1 {
+	width: 6.866%;
+}
